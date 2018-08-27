@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+        <title>UI Challenge 2</title>
+            <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form class="ui-challenge" method="#">
+       
+            <!----- input box ----->
+           <div class="text"> 
+            <label>text input</label>
+        
+            <input type="text" name="inputText" placeholder="placeholder text">
+            </div>
+
+            <div class="text"> 
+                    <label>text input w/validation error</label>
+                
+                    <input type="text" name="inputValidation" placeholder="place holder" required>
+                    </div>
+            
+            <!---select box--->
+        <div class="select">
+            <label>select box</label>    
+            <select class="" name="selectOption" placeholder="place">
+                    <option value="" select hidden>select an option</option>
+                    <option value="option 1">option 1</option>
+                    <option value="option-2">option 2</option>
+                    <option value="option-3">option 3</option>
+                    <option value="option-4">option 4</option>
+            </select>
+        </div>
+
+            <!----Checkbox---->
+        <div id="checkedbox"> 
+            <label>checkbox</label>
+                 <input type="checkbox" name="isCheck"/>
+                 <label class="check" for="isCheck"></label>
+                 <input type="checkbox" name="unchecked"/>
+                 <label class="check" for="unchecked"></label>
+    </div>
+
+
+        <!---Radio--->
+        <div id="radio">
+            <label>Radio</label>
+            <input type="radio" name="radioButton" value="0">
+            <label class="radio" for="notRadio"></label>
+            <input type="radio" name="radioButton" value="1" checked>
+            <label class="radio" for="isRadio"></label>
+            </div>
+            
+            <!----Buttons---->
+            <div id="buttoncircle"></div>
+            <label>Buttons</label>
+            <button type="submit" name="light">Submit</button>
+            <button type="submit" name="dark">Submit</button>
+        </div>
+    </form>
+      <script src="scripts/app.js"></script>
+      <script type="text/javascript">
+      uiFunctions.initIndexPage();
+      </script>
+    </body>
+</html>
