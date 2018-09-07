@@ -6,7 +6,7 @@
         <title>Form</title>
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/base.css">
-        <link rel="stylesheet" href="styles/form-styles.css">
+        <link rel="stylesheet" href="styles/form.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
@@ -39,32 +39,30 @@
                     </div>          
                 </label>
                 
-                <label>
-                    <span>checkbox</span>
-                    <input type="checkbox"/>
-                    <span></span>
-                </label>    
+                <section>
+                    <label>checkbox</label>
+                    <input id="the-Check" for="checkbox"/>
+                    <label class="sprite checkbox-unchecked"for="the-Check"></label>
+                </section>    
                 
-                <label>
-                    <span>radio</span>
-                    <input type="radio" />
-                    <span></span>
-                </label>
-
-                <label>
-                    <span>button</span>
-                    <input type="button" />
-                    <span></span>
-                </label>
+                <section>
+                    <label>radio</label>
+                    <input id="the-Radio" type="radio"/>
+                    <label class="sprite radio-unchecked" for="the-Radio">
+                </section>
+                    </label>
+                
+                <section>
+                    <label for="button">button</label>
+                    <button type="button" id="button">submit</button>
+                </section>
             </form>
-        </main> 
-        <footer>
-            </footer>      
+        </main>       
             <script>
-            $(".checkbox-unchecked").click(function () {
+            $("#the-Check > sprite").click(function () {
                 $(this).toggleClass("checkbox-checked");
             });
-            $(".radio-unchecked").click(function () {
+            $("#nonRadio").click(function () {
                 $(this).toggleClass("radio-checked");
             });
             </script>
