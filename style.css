@@ -1,66 +1,40 @@
-.text{
-    width:400px; 
+/* BASIC STYLING */
+* {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.drop-down{
-    width: 400px;
+body {
+    width: 90%;
+    margin: 0 auto;
 }
 
-
-input[type=checkbox] + label{
-    display: inline-block;
-    outline: 0;
-    width: 15vw;
-    height: 15vw;
-    background-image: url('imgs/form-elements-sprite.png');
-	width: 161px;
-	height: 160px;
-  }
-input[type=checkbox]:unchecked + label {
-        display: inline-block;
-        cursor: pointer;
-        outline: 0;
-        width: 15vw;
-        height: 15vw;
-        background-image: url('imgs/form-elements-sprite.png');
-        background-position: 29.4% 49.5%;
-        background-size: 900%;
-      }
-    
-    
-    /* background: url('imgs/form-elements-sprite.png') no-repeat -381px -239px;
-	width: 161px;
-    height: 160px;
-    */
-
-    input[type=radio] + label {
-        display: inline-block;
-        cursor: pointer;
-        outline: 0;
-        width: 15vw;
-        height: 15vw;
-        background: url('imgs/form-elements-sprite.png') no-repeat -582px -242px;
-        background-position: 45.2% 51%;
-        background-size: 860%;
-      }
-
-      input[type=radio]:checked + label {
-        display: inline-block;
-        cursor: pointer;
-        outline: 0;
-        width: 15vw;
-        height: 15vw;
-        background-image: url('../vendor/img/form-elements-sprite.png');
-        background-position: 63% 51%;
-        background-size: 860%;
-      }
-
-.buttoncircle {
-	background: url('imgs/form-elements-sprite.png') no-repeat -812px -242px;
-	width: 168px;
-    height: 166px;
-    position:absolute;
-    margin-top:-166px;
-    margin-left: 200px;
+header {
+    background-color: lightgray;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
 }
 
+section {
+    padding-bottom: 2em;
+}
+
+footer {
+    background-color: lightgray;
+    font-size: 1em;
+    margin-top: 12em;
+    padding: 1em;
+    text-align: center;
+}
+
+/* ADDITIONAL STYLING */
+input, label {
+    display:block;
+    font-size: 16px;
+}
+
+#username, #username-validated {
+    width: 30%;
+}

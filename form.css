@@ -8,25 +8,25 @@ input[type=radio], input[type=checkbox] {
 }
 
 input[type=checkbox] + span {
-	background: url('../images/form-elements-sprite.png') no-repeat 12.22% 49.585%;
+	background: url('imgs/form-elements-sprite.png') no-repeat 12.22% 49.585%;
     width: 44px;
     height: 45px;
 }
 
 input[type=checkbox]:checked + span {
-    background: url('../images/form-elements-sprite.png') no-repeat repeat 29% 50%;
+    background: url('imgs/form-elements-sprite.png') no-repeat repeat 29% 50%;
     height: 44px;
     width: 45px;
 }
 
 input[type=radio] + span {
-    background: url('../images/form-elements-sprite.png') no-repeat 45% 50%;
+    background: url('/imgs/form-elements-sprite.png') no-repeat 45% 50%;
     height: 40px;
     width: 45px;
 }
 
 input[type=radio]:checked + span {
-    background: url('../images/form-elements-sprite.png') no-repeat 65% 50%;
+    background: url('imgs/form-elements-sprite.png') no-repeat 65% 50%;
     height: 40px;
     width: 45px;
 }
@@ -40,14 +40,13 @@ input[type=radio]:checked + span {
     display: inline-block;
     outline: 0;
 }
-
 .select {
     display: inline-block;
     position: relative;
 }
 
 .select:after {
-    background: url('../images/form-elements-sprite.png') no-repeat 40% 50%;
+    background: url('imgs/form-elements-sprite.png') no-repeat 40% 50%;
     background-size: 300px 130px;
     content: '';
     height: 20px;
@@ -56,9 +55,53 @@ input[type=radio]:checked + span {
     top: 3px;
     width: 3px;
 }
-
 select {
     -webkit-appearance: none;
     padding: .5em;
     padding-right: 4em;
 }
+ 
+#nonCheck{
+    display: none;
+}
+#nonRadio{
+    display: none;
+}
+
+.sprite {
+    background-image:url('imgs/form-elements-sprite.png');
+    background-repeat: no-repeat;
+    background-size: 300px;
+}
+
+.checkbox-unchecked {
+    background-image:('imgs/form-elements-sprite.png');
+    background-position: -158px -239px;
+    display: block;
+    height: 160px;
+    width: 160px;
+}
+
+.checkbox-checked {
+    background-image: url('imgs/form-elements-sprite.png');
+    background-position: -381px -239px;
+    display: block;
+    height: 38px;
+    width: 51px;
+}
+
+.radio-unchecked {
+    background-image: url('imgs/form-elements-sprite.png');
+    background-position: -582px -242px;
+    display: block;
+    height: 38px;
+    width: 51px;
+}
+
+.radio-checked {
+    background-image: url('imgs/form-elements-sprite.png');
+    background-position: -812px -242px;
+    display: block;
+    height: 38px;
+    width: 51px;
+} 
